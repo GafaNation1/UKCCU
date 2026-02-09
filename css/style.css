@@ -30,6 +30,34 @@
     --bs-btn-focus-border-color: #015FE1;
 }
 
+/* Mobile horizontal scrolling fix */
+body {
+    overflow-x: hidden !important;
+}
+
+/* Reusable Image Classes */
+.image-frame {
+    overflow: hidden;
+}
+
+.image-circle {
+    border-radius: 50%;
+}
+
+.image-rounded {
+    border-radius: 12px;
+}
+
+.image-card {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
 /* UKCCU Brand Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Amsterdam+One&family=Gotham:wght@300;400;500;700&family=Glacial+Indifference:wght@400;700&display=swap');
 
@@ -90,6 +118,58 @@ a:focus {
 .dropdown-item:focus {
     background-color: var(--ukccu-primary) !important;
     color: var(--ukccu-white) !important;
+}
+
+/* Complete Bootstrap Override */
+.btn {
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.navbar {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--ukccu-primary) !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--ukccu-gold) !important;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--ukccu-gold) !important;
+    font-weight: 600;
+}
+
+.dropdown-menu {
+    border: 1px solid var(--ukccu-primary) !important;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15) !important;
+}
+
+.dropdown-item {
+    color: var(--ukccu-black) !important;
+    transition: all 0.3s ease;
+}
+
+.card {
+    border: none !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+}
+
+.form-control:focus {
+    border-color: var(--ukccu-primary) !important;
+    box-shadow: 0 0 0 0.25rem rgba(1, 95, 225, 0.25) !important;
 }
 
 /* Eliminate all purple/indigo/violet from Bootstrap */
