@@ -173,10 +173,10 @@ a:focus {
 }
 
 /* Eliminate all purple/indigo/violet from Bootstrap */
-.text-purple,
+.text-blue,
 .text-indigo,
 .text-violet,
-.bg-purple,
+.bg-blue,
 .bg-indigo,
 .bg-violet {
     color: var(--ukccu-primary) !important;

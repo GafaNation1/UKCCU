@@ -110,9 +110,9 @@
 
 
         <!-- Service Start -->
-        <div class="container-xxl py-5">
+            <div class="container-xxl py-5">
             <div class="container py-5 px-lg-5">
-                <div class=">
+                <div class="wow fadeInUp" data-wow-delay="0.1s">
                     <p class="section-title text-secondary justify-content-center"><span></span>Media<span></span></p>
                     <h1 class="text-center mb-5">Media & Resources</h1>
                 </div>
@@ -224,7 +224,7 @@
                     <h3 class="text-center mb-3">Resources</h3>
                     <p class="text-center mb-4">Guides, Bibles, and online materials.</p>
                     <div class="row g-4">
-                        <div class="col-lg-4 col-md-6 >
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="service-item d-flex flex-column text-center rounded">
                                 <div class="service-icon flex-shrink-0">
                                     <i class="fa fa-book fa-2x"></i>
@@ -238,7 +238,7 @@
                                 <a class="btn btn-square mt-2" href=""><i class="fa fa-arrow-right"></i></a>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 >
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                             <div class="service-item d-flex flex-column text-center rounded">
                                 <div class="service-icon flex-shrink-0">
                                     <i class="fa fa-book-open fa-2x"></i>
@@ -252,7 +252,7 @@
                                 <a class="btn btn-square mt-2" href=""><i class="fa fa-arrow-right"></i></a>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 >
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="service-item d-flex flex-column text-center rounded">
                                 <div class="service-icon flex-shrink-0">
                                     <i class="fa fa-book-reader fa-2x"></i>
@@ -411,24 +411,50 @@
     <!-- Template Javascript -->
 
     <!-- Gallery Filter JS -->
-    <script>
-    $(document).ready(function() {
-        // Initialize Isotope for gallery filtering
-        var $galleryContainer = $('.gallery-container');
-        if ($galleryContainer.length) {
-            $galleryContainer.isotope({
-                itemSelector: '.gallery-item',
-                layoutMode: 'fitRows'
+   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var filterButtons = document.querySelectorAll('#gallery-filters li');
+        var galleryItems = document.querySelectorAll('.gallery-item');
+        
+        filterButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                var filterValue = this.getAttribute('data-filter');
+                
+                filterButtons.forEach(function(btn) {
+                    btn.classList.remove('active');
+                });
+                this.classList.add('active');
+                
+                galleryItems.forEach(function(item) {
+                    if (filterValue === '*') {
+                        item.style.display = 'block';
+                        setTimeout(function() {
+                            item.style.opacity = '1';
+                            item.style.transform = 'scale(1)';
+                        }, 10);
+                    } else {
+                        var filterClass = filterValue.substring(1);
+                        if (item.classList.contains(filterClass)) {
+                            item.style.display = 'block';
+                            setTimeout(function() {
+                                item.style.opacity = '1';
+                                item.style.transform = 'scale(1)';
+                            }, 10);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'scale(0.9)';
+                            setTimeout(function() {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    }
+                });
             });
-
-            // Filter items on click
-            $('#gallery-filters li').on('click', function() {
-                $('#gallery-filters li').removeClass('active');
-                $(this).addClass('active');
-                var filterValue = $(this).attr('data-filter');
-                $galleryContainer.isotope({ filter: filterValue });
-            });
-        }
+        });
+        
+        galleryItems.forEach(function(item) {
+            item.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+        });
     });
     </script>
 </body>
