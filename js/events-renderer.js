@@ -104,10 +104,21 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Initialize Isotope after adding items
-        // We need to wait for images to load or just run it, but since this is DOM manipulation we must re-init or layout
-        setTimeout(() => {
-            // Re-finding elements because they are new
+        // Helper to wait for images
+        const waitForImages = (container) => {
+            const images = container.querySelectorAll('img');
+            const promises = Array.from(images).map(img => {
+                if (img.complete) return Promise.resolve();
+                return new Promise(resolve => {
+                    img.onload = resolve;
+                    img.onerror = resolve;
+                });
+            });
+            return Promise.all(promises);
+        };
+
+        // Initialize Isotope after images are loaded
+        waitForImages(eventsContainer).then(() => {
             var portfolioIsotope = $('.portfolio-container').isotope({
                 itemSelector: '.portfolio-item',
                 layoutMode: 'fitRows'
@@ -119,7 +130,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 portfolioIsotope.isotope({ filter: $(this).data('filter') });
             });
-        }, 100);
+
+            // Trigger layout again to be safe
+            setTimeout(() => {
+                portfolioIsotope.isotope('layout');
+            }, 500);
+        });
+
+        // Fallback: Ensure layout is correct after full window load
+        window.addEventListener('load', () => {
+            if ($('.portfolio-container').data('isotope')) {
+                $('.portfolio-container').isotope('layout');
+            }
+        });
     }
 
     // Run render
