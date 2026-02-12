@@ -472,8 +472,8 @@ h6,
 /*** Hero Header ***/
 .hero-header {
     position: relative;
-    margin-bottom: 6rem;
-    padding: 14rem 0;
+    margin-bottom: 2rem;
+    padding: 20rem 0;
     background: url('../photos and videos/PRAISE\ AND\ WORSHIP.jpeg') center center / cover no-repeat;
     display: flex;
     align-items: center;
