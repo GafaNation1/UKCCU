@@ -1,0 +1,80 @@
+const eventsData = [
+    {
+        id: 1,
+        category: "main-event",
+        title: "Freshers' Orientation",
+        date: "2024-09-15",
+        image: "img/portfolio-1.jpg",
+        venue: "Main Hall",
+        time: "10:00 AM - 4:00 PM",
+        leader: "Chairperson - John Doe",
+        contactName: "Mary Jane",
+        contactPhone: "+254 700 000000",
+        description: "A welcoming event for all new students joining the campus. Get to know the CU leadership, various ministries, and enjoy fun activities and fellowship."
+    },
+    {
+        id: 2,
+        category: "fellowship",
+        title: "Weekly Bible Study",
+        date: "2024-10-02",
+        image: "img/portfolio-2.jpg",
+        venue: "Room 101",
+        time: "6:00 PM - 8:00 PM",
+        leader: "Bible Study Coordinator",
+        contactName: "Peter Pan",
+        contactPhone: "+254 711 111111",
+        description: "Join us for an in-depth study of the book of Romans. Open to all students."
+    },
+    {
+        id: 3,
+        category: "retreat",
+        title: "Annual Leaders Retreat",
+        date: "2024-11-05",
+        image: "img/portfolio-3.jpg",
+        venue: "Naivasha Retreat Center",
+        time: "All Day",
+        leader: "Executive Committee",
+        contactName: "Sarah Smith",
+        contactPhone: "+254 722 222222",
+        description: "A time of prayer, planning, and bonding for all CU leaders. Transport provided."
+    },
+    {
+        id: 4,
+        category: "outreach",
+        title: "Community Clean-up",
+        date: "2024-10-20",
+        image: "img/portfolio-4.jpg",
+        venue: "Kabete Market",
+        time: "8:00 AM - 12:00 PM",
+        leader: "Outreach Ministry",
+        contactName: "David Jones",
+        contactPhone: "+254 733 333333",
+        description: "Giving back to our community by cleaning up the local market area. Come dressed in comfortable attire."
+    },
+    {
+        id: 5,
+        category: "main-event",
+        title: "Worship Night",
+        date: "2024-12-01",
+        image: "img/portfolio-5.jpg",
+        venue: "Amphitheatre",
+        time: "7:00 PM - 10:00 PM",
+        leader: "Worship Team",
+        contactName: "Grace Kelly",
+        contactPhone: "+254 744 444444",
+        description: "An evening of high praise and deep worship. Feature guest artist to be announced."
+    },
+    {
+        id: 6,
+        category: "fellowship",
+        title: "Men's Fellowship",
+        date: "2024-10-10",
+        image: "img/portfolio-6.jpg",
+        venue: "Discussion Room A",
+        time: "5:00 PM - 7:00 PM",
+        leader: "Men's Ministry Leader",
+        contactName: "Tom Hardy",
+        contactPhone: "+254 755 555555",
+        description: "A gathering for brothers to encourage and sharpen one another."
+    }
+];
