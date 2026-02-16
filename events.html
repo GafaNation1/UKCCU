@@ -239,9 +239,6 @@
         </div>
         <!-- Footer End -->
 
-
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
 
     <!-- JavaScript Libraries -->
@@ -259,7 +256,24 @@
     <script src="js/events-data.js"></script>
     <script src="js/events-renderer.js"></script>
 
-    <!-- Template Javascript -->
+    <div id="announcement-bell" class="announcement-bell">
+        <i class="fas fa-bell"></i>
+        <span id="announcement-badge" class="announcement-badge"></span>
+    </div>
+
+    <!-- Announcement Panel -->
+    <div id="announcement-panel" class="announcement-panel">
+        <div class="announcement-panel-header">
+            <h5>Announcements</h5>
+            <button id="close-panel" class="close-panel-btn">&times;</button>
+        </div>
+        <div id="announcement-list" class="announcement-list"></div>
+        <div class="announcement-panel-footer">
+            <a href="events.html" class="view-all-link">View All Events</a>
+        </div>
+    </div>
+
+    <script src="announcements.js"></script>
 </body>
 
 </html>
