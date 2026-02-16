@@ -1552,3 +1552,141 @@ a:hover,
         bottom: 135px;
     }
 }
+
+
+
+.past-leadership-archive {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+}
+
+.archive-item {
+    display: grid;
+    grid-template-columns: 140px 1fr auto;
+    gap: 24px;
+    padding: 28px 32px;
+    border-bottom: 1px solid #e5e7eb;
+    align-items: center;
+    transition: background 0.2s ease;
+}
+
+.archive-item:last-child {
+    border-bottom: none;
+}
+
+.archive-item:hover {
+    background: #f9fafb;
+}
+
+.archive-year {
+    display: flex;
+    align-items: center;
+}
+
+.year-label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #374151;
+    letter-spacing: -0.01em;
+}
+
+.archive-content h5 {
+    margin: 0 0 6px 0;
+    font-size: 17px;
+    font-weight: 600;
+    color: #111827;
+}
+
+.archive-content p {
+    margin: 0;
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.5;
+}
+
+.archive-action {
+    display: flex;
+    align-items: center;
+}
+
+.archive-link {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--primary);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: gap 0.2s ease, color 0.2s ease;
+    white-space: nowrap;
+}
+
+.archive-link:hover {
+    color: var(--dark);
+    gap: 10px;
+}
+
+.archive-link i {
+    font-size: 12px;
+}
+
+.older-archive {
+    border-top: 1px solid #e5e7eb;
+}
+
+.older-archive .archive-item:first-child {
+    border-top: none;
+}
+
+.archive-more {
+    padding: 20px 32px;
+    text-align: center;
+    border-top: 1px solid #e5e7eb;
+}
+
+.show-more-btn {
+    background: none;
+    border: none;
+    color: #6b7280;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+
+.show-more-btn:hover {
+    color: #374151;
+    background: #f3f4f6;
+}
+
+.show-more-btn i {
+    font-size: 12px;
+    transition: transform 0.2s ease;
+}
+
+@media (max-width: 768px) {
+    .archive-item {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 24px 20px;
+    }
+
+    .archive-year {
+        padding-bottom: 8px;
+        border-bottom: 1px solid #f3f4f6;
+    }
+
+    .archive-action {
+        padding-top: 8px;
+    }
+
+    .archive-more {
+        padding: 16px 20px;
+    }
+}

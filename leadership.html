@@ -563,29 +563,80 @@
                             <p class="text-center mb-5">Honoring the dedicated leaders who have served UKCCU in previous
                                 years.</p>
 
-                            <div class="row g-4 justify-content-center">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="team-item bg-light rounded">
-                                        <div class="text-center p-4">
-                                            <i class="fas fa-history fa-3x text-primary mb-3"></i>
-                                            <h4>Executive Committee 2023/2024</h4>
-                                            <p class="mb-3">View the leadership team that served during the 2023/2024
-                                                academic year.</p>
-                                            <a href="leadership-2023-2024.html" class="btn btn-primary">View
-                                                Committee</a>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="past-leadership-archive">
+                                        <div class="archive-item">
+                                            <div class="archive-year">
+                                                <span class="year-label">2023/2024</span>
+                                            </div>
+                                            <div class="archive-content">
+                                                <h5>Executive Committee 2023/2024</h5>
+                                                <p>View the leadership team that served during the 2023/2024 academic
+                                                    year.</p>
+                                            </div>
+                                            <div class="archive-action">
+                                                <a href="leadership-2023-2024.html" class="archive-link">
+                                                    View Committee <i class="fas fa-arrow-right"></i>
+                                                </a>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
 
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="team-item bg-light rounded">
-                                        <div class="text-center p-4">
-                                            <i class="fas fa-history fa-3x text-primary mb-3"></i>
-                                            <h4>Executive Committee 2024/2025</h4>
-                                            <p class="mb-3">View the leadership team that served during the 2024/2025
-                                                academic year.</p>
-                                            <a href="leadership-2024-2025.html" class="btn btn-primary">View
-                                                Committee</a>
+                                        <div class="archive-item">
+                                            <div class="archive-year">
+                                                <span class="year-label">2024/2025</span>
+                                            </div>
+                                            <div class="archive-content">
+                                                <h5>Executive Committee 2024/2025</h5>
+                                                <p>View the leadership team that served during the 2024/2025 academic
+                                                    year.</p>
+                                            </div>
+                                            <div class="archive-action">
+                                                <a href="leadership-2024-2025.html" class="archive-link">
+                                                    View Committee <i class="fas fa-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div id="older-archive" class="older-archive" style="display: none;">
+                                            <div class="archive-item">
+                                                <div class="archive-year">
+                                                    <span class="year-label">2022/2023</span>
+                                                </div>
+                                                <div class="archive-content">
+                                                    <h5>Executive Committee 2022/2023</h5>
+                                                    <p>View the leadership team that served during the 2022/2023
+                                                        academic year.</p>
+                                                </div>
+                                                <div class="archive-action">
+                                                    <a href="leadership-2022-2023.html" class="archive-link">
+                                                        View Committee <i class="fas fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="archive-item">
+                                                <div class="archive-year">
+                                                    <span class="year-label">2021/2022</span>
+                                                </div>
+                                                <div class="archive-content">
+                                                    <h5>Executive Committee 2021/2022</h5>
+                                                    <p>View the leadership team that served during the 2021/2022
+                                                        academic year.</p>
+                                                </div>
+                                                <div class="archive-action">
+                                                    <a href="leadership-2021-2022.html" class="archive-link">
+                                                        View Committee <i class="fas fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="archive-more">
+                                            <button id="show-more-btn" class="show-more-btn">
+                                                <span class="more-text">View Older Committees</span>
+                                                <i class="fas fa-chevron-down"></i>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -593,6 +644,29 @@
                         </div>
                     </div>
                 </div>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        const showMoreBtn = document.getElementById('show-more-btn');
+                        const olderArchive = document.getElementById('older-archive');
+                        const moreText = showMoreBtn.querySelector('.more-text');
+                        const chevron = showMoreBtn.querySelector('i');
+
+                        showMoreBtn.addEventListener('click', function () {
+                            if (olderArchive.style.display === 'none') {
+                                olderArchive.style.display = 'block';
+                                moreText.textContent = 'Show Less';
+                                chevron.classList.remove('fa-chevron-down');
+                                chevron.classList.add('fa-chevron-up');
+                            } else {
+                                olderArchive.style.display = 'none';
+                                moreText.textContent = 'View Older Committees';
+                                chevron.classList.remove('fa-chevron-up');
+                                chevron.classList.add('fa-chevron-down');
+                            }
+                        });
+                    });
+                </script>
                 <p class="mb-2"><i class="fa fa-envelope me-3"></i>Email: <a
                         href="mailto:email@ukccu.org">email@ukccu.org</a></p>
                 <div class="d-flex pt-2">
