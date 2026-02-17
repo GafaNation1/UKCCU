@@ -216,11 +216,20 @@ a:focus {
     color: var(--ukccu-white) !important;
 }
 
-/* Footer link overrides */
+/* Footer link overrides - Keep all footer links white */
+.footer .btn.btn-link,
 .footer .btn.btn-link:hover,
+.footer .btn.btn-link:visited,
+.footer .btn.btn-link:active,
+.footer .copyright a,
 .footer .copyright a:hover,
-.footer .footer-menu a:hover {
-    color: var(--ukccu-gold) !important;
+.footer .copyright a:visited,
+.footer .copyright a:active,
+.footer .footer-menu a,
+.footer .footer-menu a:hover,
+.footer .footer-menu a:visited,
+.footer .footer-menu a:active {
+    color: #FFFFFF !important;
 }
 
 /* Form focus states */
@@ -1002,7 +1011,7 @@ h6,
 .footer .btn.btn-link:hover {
     letter-spacing: 1px;
     box-shadow: none;
-    color: var(--secondary);
+    color: #FFFFFF !important;
 }
 
 .footer .copyright {
@@ -1012,7 +1021,7 @@ h6,
 }
 
 .footer .copyright a {
-    color: var(--light);
+    color: #FFFFFF !important;
 }
 
 .footer .footer-menu a {
@@ -1029,7 +1038,7 @@ h6,
 
 .footer .copyright a:hover,
 .footer .footer-menu a:hover {
-    color: var(--secondary);
+    color: #FFFFFF !important;
 }
 
 /* Connect Page Hover Effects */
