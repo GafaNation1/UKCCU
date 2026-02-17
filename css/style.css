@@ -1535,7 +1535,7 @@ a:hover,
     font-size: 14px;
 }
 
-/* Mobile Responsive */
+/* Mobile Responsive for announcement bell*/
 @media (max-width: 576px) {
     .announcement-panel {
         right: 10px;
@@ -1553,7 +1553,7 @@ a:hover,
     }
 }
 
-
+/* Past Leadership Exec*/
 
 .past-leadership-archive {
     background: #fff;

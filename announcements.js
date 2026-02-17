@@ -10,24 +10,24 @@
             id: "easter-service-2025",
             title: "Easter Sunday Service",
             description: "Join us for a special Easter celebration with worship and fellowship.",
-            startDate: "2025-04-15",
-            endDate: "2025-04-20",
+            startDate: "2026-02-17",
+            endDate: "2026-02-18",
             link: "events.html#easter"
         },
         {
             id: "bible-study-marchc",
             title: "Weekly Bible Study",
             description: "Every Wednesday at 6 PM. All are welcome to join our study sessions.",
-            startDate: "2025-02-26",
-            endDate: "2025-02-28",
+            startDate: "2026-02-26",
+            endDate: "2026-02-28",
             link: "events.html#bible-study"
         },
         {
             id: "youth-retreat-2025",
             title: "Youth Retreat Registration",
             description: "Sign up for the annual youth retreat happening in May. Limited spots available.",
-            startDate: "2025-02-10",
-            endDate: "2025-02-28",
+            startDate: "2026-02-10",
+            endDate: "2026-02-28",
             link: "events.html#youth-retreat"
         },
         {
