@@ -8,10 +8,10 @@
     const announcements = [
         {
             id: "easter-service-2025",
-            title: "Easter Sunday Service",
-            description: "Join us for a special Easter celebration with worship and fellowship.",
-            startDate: "2026-02-17",
-            endDate: "2026-02-18",
+            title: "Inreach Week",
+            description: "Join us in evangelism around Upper Kabete Campus from March 1st to March 7th. Let's share the love of Christ together!",
+            startDate: "2026-02-27",
+            endDate: "2026-03-07",
             link: "events.html#easter"
         },
         {
