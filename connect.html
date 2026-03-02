@@ -5,7 +5,9 @@
   <meta charset="utf-8" />
   <title>Connect | UKCCU – Upper Kabete Christian Union UoN</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <meta content="" name="keywords" />
+  <meta
+    content="UKCCU connect, Upper Kabete Campus Christian Union WhatsApp groups, campus fellowship Nairobi, class fellowships University of Nairobi, evangelistic teams Kenya"
+    name="keywords" />
   <meta name="description"
     content="Connect with UKCCU – join WhatsApp groups, class fellowships, and evangelistic teams at Upper Kabete Campus, University of Nairobi." />
   <link rel="canonical" href="https://ukccu.netlify.app/connect" />
@@ -142,223 +144,387 @@
     </div>
     <!-- Navbar & Hero End -->
 
+    <!-- Connect Sections CSS -->
+    <style>
+      /* ── Section wrapper ── */
+      .connect-section {
+        padding: 64px 0;
+        border-bottom: 1px solid #e8e8e8;
+      }
+
+      .connect-section:last-of-type {
+        border-bottom: none;
+      }
+
+      /* ── Section heading block ── */
+      .connect-section-header {
+        margin-bottom: 40px;
+      }
+
+      .connect-section-header h2 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #1a1a2e;
+        margin-bottom: 8px;
+        letter-spacing: -0.3px;
+      }
+
+      .connect-section-header p {
+        font-size: 0.95rem;
+        color: #555;
+        max-width: 520px;
+        margin: 0 auto;
+      }
+
+      .connect-section-divider {
+        width: 48px;
+        height: 3px;
+        background: var(--primary, #003366);
+        margin: 12px auto 0;
+        border-radius: 2px;
+      }
+
+      /* ── Cards ── */
+      .group-card {
+        background: #ffffff;
+        border: 1px solid #e2e6ea;
+        border-radius: 8px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        transition: box-shadow 0.2s ease, border-color 0.2s ease;
+      }
+
+      .group-card:hover {
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.09);
+        border-color: #c8d0dc;
+      }
+
+      /* ── Image container — fixed aspect ratio 16:9 ── */
+      .group-card-img {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        overflow: hidden;
+        background: #eef0f3;
+        position: relative;
+      }
+
+      .group-card-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+      }
+
+      /* ── Icon fallback shown when no real image ── */
+      .group-card-icon {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        background: #f0f2f5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .group-card-icon i {
+        font-size: 2.2rem;
+        color: var(--primary, #003366);
+        opacity: 0.55;
+      }
+
+      /* ── Card body ── */
+      .group-card-body {
+        padding: 20px 22px 24px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+
+      .group-card-body h5 {
+        font-size: 0.97rem;
+        font-weight: 700;
+        color: #1a1a2e;
+        margin-bottom: 6px;
+        line-height: 1.4;
+      }
+
+      .group-card-body p {
+        font-size: 0.85rem;
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 0;
+        flex: 1;
+      }
+
+      /* ── CTA link ── */
+      .group-card-cta {
+        margin-top: 16px;
+      }
+
+      .group-card-cta a {
+        display: inline-block;
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: var(--primary, #003366);
+        border: 1.5px solid var(--primary, #003366);
+        border-radius: 4px;
+        padding: 5px 14px;
+        text-decoration: none;
+        transition: background 0.18s ease, color 0.18s ease;
+      }
+
+      .group-card-cta a:hover {
+        background: var(--primary, #003366);
+        color: #ffffff;
+      }
+
+      /* ── E-team wider cards ── */
+      .eteam-grid .group-card-img {
+        aspect-ratio: 16 / 7;
+      }
+
+      /* ── Responsive ── */
+      @media (max-width: 767px) {
+        .connect-section {
+          padding: 48px 0;
+        }
+
+        .connect-section-header h2 {
+          font-size: 1.35rem;
+        }
+      }
+    </style>
+
     <!-- Connect Start -->
-    <div class="container-xxl py-5">
-      <div class="container py-5 px-lg-5">
+    <div class="container-xxl">
+      <div class="container px-lg-5">
+
         <!-- Section 1: WhatsApp Groups -->
-        <section id="whatsapp-groups" class="mb-5">
-          <div class="wow fadeInUp" data-wow-delay="0.1s">
-            <h2 class="text-center mb-3">WhatsApp Fellowship Groups</h2>
-            <p class="text-center mb-4">
-              These groups help members stay connected, informed, and
-              spiritually engaged throughout the week.
-            </p>
+        <section id="whatsapp-groups" class="connect-section">
+          <div class="connect-section-header text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h2>WhatsApp Fellowship Groups</h2>
+            <div class="connect-section-divider"></div>
+            <p class="mt-3">These groups help members stay connected, informed, and spiritually engaged throughout the
+              week.</p>
           </div>
+
           <div class="row g-4">
+            <!-- Main Group -->
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="connect-card bg-light rounded p-4 h-100 text-center">
-                <div class="mb-3">
-                  <i class="fab fa-whatsapp fa-3x text-primary"></i>
+              <div class="group-card">
+                <div class="group-card-img">
+                  <img src="photos and videos/CULTURAL SUNDAY PIC 2.jpeg" alt="Main UKCCU WhatsApp Group"
+                    loading="lazy" />
                 </div>
-                <img class="img-fluid rounded mb-3" src="photos and videos/After Service.webp"
-                  alt="[Group Image Placeholder]" style="max-width: 100%; height: 120px; object-fit: cover" />
-                <h5 class="mb-2">Main UKCCU WhatsApp Group</h5>
-                <p class="small mb-3">
-                  Primary communication channel for announcements, prayer
-                  requests, and general fellowship.
-                </p>
-                <a href="https://wa.me/705047204 " class="btn btn-primary btn-sm">Contact Admin</a>
+                <div class="group-card-body">
+                  <h5>Main UKCCU WhatsApp Group</h5>
+                  <p>Primary communication channel for announcements, prayer requests, and general fellowship.</p>
+                  <div class="group-card-cta">
+                    <a href="https://wa.me/705047204">Contact Admin</a>
+                  </div>
+                </div>
               </div>
             </div>
+
+            <!-- Praise & Worship -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.15s">
+              <div class="group-card">
+                <div class="group-card-icon">
+                  <i class="fa fa-music"></i>
+                </div>
+                <div class="group-card-body">
+                  <h5>Praise &amp; Worship Team</h5>
+                  <p>For members involved in leading worship and music ministry.</p>
+                  <div class="group-card-cta">
+                    <a href="https://wa.me/755607735">Contact Admin</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Intercessory -->
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-              <div class="connect-card bg-light rounded p-4 h-100 text-center">
-                <div class="mb-3">
-                  <i class="fa fa-music fa-3x text-primary"></i>
+              <div class="group-card">
+                <div class="group-card-icon">
+                  <i class="fa fa-praying-hands"></i>
                 </div>
-                <img class="img-fluid rounded mb-3" src="img/about.png" alt="[Group Image Placeholder]"
-                  style="max-width: 100%; height: 120px; object-fit: cover" />
-                <h5 class="mb-2">Praise & Worship Team</h5>
-                <p class="small mb-3">
-                  For members involved in leading worship and music ministry.
-                </p>
-                <a href="https://wa.me/755607735" class="btn btn-primary btn-sm">Contact Admin</a>
+                <div class="group-card-body">
+                  <h5>Intercessory (Prayer) Team</h5>
+                  <p>Dedicated group for prayer requests, intercession, and spiritual warfare.</p>
+                  <div class="group-card-cta">
+                    <a href="https://wa.me/768476713">Contact Admin</a>
+                  </div>
+                </div>
               </div>
             </div>
+
+            <!-- Dance Ministry -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.25s">
+              <div class="group-card">
+                <div class="group-card-icon">
+                  <i class="fa fa-heart"></i>
+                </div>
+                <div class="group-card-body">
+                  <h5>Dance Ministry</h5>
+                  <p>For members involved in dance and creative arts ministry.</p>
+                  <div class="group-card-cta">
+                    <a href="https://wa.me/727737647">Contact Admin</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ushering -->
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-              <div class="connect-card bg-light rounded p-4 h-100 text-center">
-                <div class="mb-3">
-                  <i class="fa fa-praying-hands fa-3x text-primary"></i>
+              <div class="group-card">
+                <div class="group-card-icon">
+                  <i class="fa fa-hands-helping"></i>
                 </div>
-                <img class="img-fluid rounded mb-3" src="img/about.png" alt="[Group Image Placeholder]"
-                  style="max-width: 100%; height: 120px; object-fit: cover" />
-                <h5 class="mb-2">Intercessory (Prayer) Team</h5>
-                <p class="small mb-3">
-                  Dedicated group for prayer requests, intercession, and
-                  spiritual warfare.
-                </p>
-                <a href="https://wa.me/768476713" class="btn btn-primary btn-sm">Contact Admin</a>
+                <div class="group-card-body">
+                  <h5>Ushering Team</h5>
+                  <p>For members serving in ushering and hospitality ministry.</p>
+                  <div class="group-card-cta">
+                    <a href="https://wa.me/727737647">Contact Admin</a>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-              <div class="connect-card bg-light rounded p-4 h-100 text-center">
-                <div class="mb-3">
-                  <i class="fa fa-dance fa-3x text-primary"></i>
+
+            <!-- Media -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.35s">
+              <div class="group-card">
+                <div class="group-card-icon">
+                  <i class="fa fa-video"></i>
                 </div>
-                <img class="img-fluid rounded mb-3" src="img/about.png" alt="[Group Image Placeholder]"
-                  style="max-width: 100%; height: 120px; object-fit: cover" />
-                <h5 class="mb-2">Dance Ministry</h5>
-                <p class="small mb-3">
-                  For members involved in dance and creative arts ministry.
-                </p>
-                <a href="https://wa.me/727737647" class="btn btn-primary btn-sm">Contact Admin</a>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-              <div class="connect-card bg-light rounded p-4 h-100 text-center">
-                <div class="mb-3">
-                  <i class="fa fa-door-open fa-3x text-primary"></i>
+                <div class="group-card-body">
+                  <h5>Media Team</h5>
+                  <p>For members involved in photography, videography, and media production.</p>
+                  <div class="group-card-cta">
+                    <a href="https://wa.me/7115367632">Contact Admin</a>
+                  </div>
                 </div>
-                <img class="img-fluid rounded mb-3" src="img/about.png" alt="[Group Image Placeholder]"
-                  style="max-width: 100%; height: 120px; object-fit: cover" />
-                <h5 class="mb-2">Ushering Team</h5>
-                <p class="small mb-3">
-                  For members serving in ushering and hospitality ministry.
-                </p>
-                <a href="https://wa.me/727737647" class="btn btn-primary btn-sm">Contact Admin</a>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-              <div class="connect-card bg-light rounded p-4 h-100 text-center">
-                <div class="mb-3">
-                  <i class="fa fa-video fa-3x text-primary"></i>
-                </div>
-                <img class="img-fluid rounded mb-3" src="img/about.png" alt="[Group Image Placeholder]"
-                  style="max-width: 100%; height: 120px; object-fit: cover" />
-                <h5 class="mb-2">Media Team</h5>
-                <p class="small mb-3">
-                  For members involved in photography, videography, and media
-                  production.
-                </p>
-                <a href="https://wa.me/7115367632" class="btn btn-primary btn-sm">Contact Admin</a>
               </div>
             </div>
           </div>
         </section>
 
         <!-- Section 2: Class Fellowships -->
-        <section id="class-fellowships" class="mb-5">
-          <div class="wow fadeInUp" data-wow-delay="0.1s">
-            <h2 class="text-center mb-3">Class Fellowships</h2>
-            <p class="text-center mb-4">
-              Small fellowship groups organized by year of study to encourage
-              discipleship, accountability, and community.
-            </p>
+        <section id="class-fellowships" class="connect-section">
+          <div class="connect-section-header text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h2>Class Fellowships</h2>
+            <div class="connect-section-divider"></div>
+            <p class="mt-3">Small fellowship groups organized by year of study to encourage discipleship,
+              accountability, and community.</p>
           </div>
+
           <div class="row g-4">
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="connect-card bg-light rounded p-4 h-100 text-center">
-                <div class="mb-3">
-                  <i class="fa fa-graduation-cap fa-3x text-primary"></i>
+              <div class="group-card">
+                <div class="group-card-icon">
+                  <i class="fa fa-graduation-cap"></i>
                 </div>
-                <img class="img-fluid rounded mb-3" src="img/about.png" alt="[Fellowship Image Placeholder]"
-                  style="max-width: 100%; height: 120px; object-fit: cover" />
-                <h5 class="mb-2">First Year Fellowship</h5>
-                <p class="small mb-3">
-                  Support and community for first-year students adjusting to
-                  campus life.
-                </p>
-                <a href="https://wa.me/727737647" class="btn btn-primary btn-sm">Contact Admin</a>
+                <div class="group-card-body">
+                  <h5>First Year Fellowship</h5>
+                  <p>Support and community for first-year students adjusting to campus life.</p>
+                  <div class="group-card-cta">
+                    <a href="https://wa.me/727737647">Contact Admin</a>
+                  </div>
+                </div>
               </div>
             </div>
+
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.15s">
+              <div class="group-card">
+                <div class="group-card-icon">
+                  <i class="fa fa-graduation-cap"></i>
+                </div>
+                <div class="group-card-body">
+                  <h5>Second Year Fellowship</h5>
+                  <p>Continued growth and deeper relationships for second-year students.</p>
+                  <div class="group-card-cta">
+                    <a href="#">Contact Admin</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-              <div class="connect-card bg-light rounded p-4 h-100 text-center">
-                <div class="mb-3">
-                  <i class="fa fa-graduation-cap fa-3x text-primary"></i>
+              <div class="group-card">
+                <div class="group-card-icon">
+                  <i class="fa fa-graduation-cap"></i>
                 </div>
-                <img class="img-fluid rounded mb-3" src="img/about.png" alt="[Fellowship Image Placeholder]"
-                  style="max-width: 100%; height: 120px; object-fit: cover" />
-                <h5 class="mb-2">Second Year Fellowship</h5>
-                <p class="small mb-3">
-                  Continued growth and deeper relationships for second-year
-                  students.
-                </p>
-                <a href="#" class="btn btn-primary btn-sm">Contact Admin</a>
+                <div class="group-card-body">
+                  <h5>Third Year Fellowship</h5>
+                  <p>Leadership development and mentorship opportunities for third-year students.</p>
+                  <div class="group-card-cta">
+                    <a href="#">Contact Admin</a>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-              <div class="connect-card bg-light rounded p-4 h-100 text-center">
-                <div class="mb-3">
-                  <i class="fa fa-graduation-cap fa-3x text-primary"></i>
+
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.25s">
+              <div class="group-card">
+                <div class="group-card-icon">
+                  <i class="fa fa-graduation-cap"></i>
                 </div>
-                <img class="img-fluid rounded mb-3" src="img/about.png" alt="[Fellowship Image Placeholder]"
-                  style="max-width: 100%; height: 120px; object-fit: cover" />
-                <h5 class="mb-2">Third Year Fellowship</h5>
-                <p class="small mb-3">
-                  Leadership development and mentorship opportunities for
-                  third-year students.
-                </p>
-                <a href="#" class="btn btn-primary btn-sm">Contact Admin</a>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-              <div class="connect-card bg-light rounded p-4 h-100 text-center">
-                <div class="mb-3">
-                  <i class="fa fa-graduation-cap fa-3x text-primary"></i>
+                <div class="group-card-body">
+                  <h5>Fourth Year Fellowship</h5>
+                  <p>Preparing for transition and continued service for final-year students.</p>
+                  <div class="group-card-cta">
+                    <a href="#">Contact Admin</a>
+                  </div>
                 </div>
-                <img class="img-fluid rounded mb-3" src="img/about.png" alt="[Fellowship Image Placeholder]"
-                  style="max-width: 100%; height: 120px; object-fit: cover" />
-                <h5 class="mb-2">Fourth Year Fellowship</h5>
-                <p class="small mb-3">
-                  Preparing for transition and continued service for
-                  final-year students.
-                </p>
-                <a href="#" class="btn btn-primary btn-sm">Contact Admin</a>
               </div>
             </div>
           </div>
         </section>
 
         <!-- Section 3: E-Teams -->
-        <section id="eteam-fellowships" class="mb-5">
-          <div class="wow fadeInUp" data-wow-delay="0.1s">
-            <h2 class="text-center mb-3">Evangelistic Teams (E-Teams)</h2>
-            <p class="text-center mb-4">
-              Mission-focused teams that take the gospel beyond the campus.
-            </p>
+        <section id="eteam-fellowships" class="connect-section">
+          <div class="connect-section-header text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h2>Evangelistic Teams (E-Teams)</h2>
+            <div class="connect-section-divider"></div>
+            <p class="mt-3">Mission-focused teams that take the gospel beyond the campus.</p>
           </div>
-          <div class="row g-4 justify-content-center">
+
+          <div class="row g-4 justify-content-center eteam-grid">
             <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="connect-card bg-light rounded p-4 h-100 text-center">
-                <div class="mb-3">
-                  <i class="fa fa-globe fa-3x text-primary"></i>
+              <div class="group-card">
+                <div class="group-card-icon" style="aspect-ratio: 16/7;">
+                  <i class="fa fa-globe"></i>
                 </div>
-                <img class="img-fluid rounded mb-3" src="img/about.png" alt="[E-Team Image Placeholder]"
-                  style="max-width: 100%; height: 150px; object-fit: cover" />
-                <h5 class="mb-2">NET — Nyanza Evangelistic Team</h5>
-                <p class="small mb-3">
-                  Mission-focused team serving the Nyanza region with
-                  evangelism, discipleship, and community outreach.
-                </p>
-                <a href="#" class="btn btn-primary btn-sm">Contact / Join</a>
+                <div class="group-card-body">
+                  <h5>NET — Nyanza Evangelistic Team</h5>
+                  <p>Mission-focused team serving the Nyanza region with evangelism, discipleship, and community
+                    outreach.</p>
+                  <div class="group-card-cta">
+                    <a href="#">Contact / Join</a>
+                  </div>
+                </div>
               </div>
             </div>
+
             <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-              <div class="connect-card bg-light rounded p-4 h-100 text-center">
-                <div class="mb-3">
-                  <i class="fa fa-globe fa-3x text-primary"></i>
+              <div class="group-card">
+                <div class="group-card-icon" style="aspect-ratio: 16/7;">
+                  <i class="fa fa-globe"></i>
                 </div>
-                <img class="img-fluid rounded mb-3" src="img/about.png" alt="[E-Team Image Placeholder]"
-                  style="max-width: 100%; height: 150px; object-fit: cover" />
-                <h5 class="mb-2">WESO — Western Evangelistic Team</h5>
-                <p class="small mb-3">
-                  Mission-focused team serving the Western region with
-                  evangelism, discipleship, and community outreach.
-                </p>
-                <a href="#" class="btn btn-primary btn-sm">Contact / Join</a>
+                <div class="group-card-body">
+                  <h5>WESO — Western Evangelistic Team</h5>
+                  <p>Mission-focused team serving the Western region with evangelism, discipleship, and community
+                    outreach.</p>
+                  <div class="group-card-cta">
+                    <a href="#">Contact / Join</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
+
       </div>
     </div>
     <!-- Connect End -->
@@ -381,7 +547,8 @@
             </p>
             <p class="mb-2">
               <i class="fa fa-envelope me-2"></i>Email:
-              <a href="mailto:email@ukccu.org">email@ukccu.org</a>
+              <a href="/cdn-cgi/l/email-protection#dfbab2beb6b39faab4bcbcaaf1b0adb8"><span class="__cf_email__"
+                  data-cfemail="b5d0d8d4dcd9f5c0ded6d6c09bdac7d2">[email&#160;protected]</span></a>
             </p>
             <div class="d-flex pt-2">
               <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -471,6 +638,7 @@
   </div>
 
   <!-- JavaScript Libraries -->
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="lib/wow/wow.min.js"></script>
@@ -478,7 +646,6 @@
   <script src="lib/waypoints/waypoints.min.js"></script>
   <script src="lib/counterup/counterup.min.js"></script>
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/isotope/isotope.pkgd.min.js"></script>
   <script src="lib/lightbox/js/lightbox.min.js"></script>
 
   <!-- Template Javascript -->
