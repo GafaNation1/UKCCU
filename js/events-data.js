@@ -47,8 +47,8 @@ const eventsData = [
         venue: "Kabete Market",
         time: "8:00 AM - 12:00 PM",
         leader: "Outreach Ministry",
-        contactName: "Cindy Hazel",
-        contactPhone: "+254 733 333333",
+        contactName: "Denis Ouma",
+        contactPhone: "+254 705696558",
         description: "Taking the gospel to the communities around campus and within Kenya"
     },
     {
