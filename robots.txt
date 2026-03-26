@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ukccu.netlify.app/sitemap.xml
+Sitemap: https://ukccu.org/sitemap.xml
