@@ -7,9 +7,17 @@
     // ========================================
     const announcements = [
         {
-            id: "easter-service-2025",
-            title: "Inreach Week",
-            description: "Join us in evangelism around Upper Kabete Campus from March 1st to March 7th. Let's share the love of Christ together!",
+            id: "JCC Prayer and Worship Night",
+            title: "JCC Prayer and Worship Night",
+            description: "Join us for an evening of prayer and worship at the JCC. We shall all leave by 7:30pm. This Friday 3rd of April.",
+            startDate: "2026-03-28",
+            endDate: "2026-04-04",
+            link: "events.html#jcc-prayer-worship"
+        },
+        {
+            id: "easter-service-2026",
+            title: "Easter Service",
+            description: "Join us for our Easter Sunday service as we celebrate the resurrection of Jesus.",
             startDate: "2026-02-27",
             endDate: "2026-03-07",
             link: "events.html#easter"
