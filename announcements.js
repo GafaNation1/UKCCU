@@ -9,7 +9,7 @@
         {
             id: "JCC Prayer and Worship Night",
             title: "JCC Prayer and Worship Night",
-            description: "Join us for an evening of prayer and worship at the JCC. We shall all leave by 7:30pm. This Friday 3rd of April.",
+            description: "Join us for an evening of prayer and worship at Chiromo Campus. We shall all leave by 7:30pm. This Friday 3rd of April.",
             startDate: "2026-03-28",
             endDate: "2026-04-04",
             link: "events.html#jcc-prayer-worship"
