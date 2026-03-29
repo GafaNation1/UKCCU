@@ -15,6 +15,16 @@ const mediaData = {
     galleryItems: [
         {
             id: 1,
+            category: "sunday",
+            image: "photos and videos/OLD SCHOOL SUNDAY.JPG",
+            alt: "Old School Sunday",
+            badge: "Sunday",
+            title: "Old School Sunday (ICT Sunday)",
+            description: "View photos from our Old School Sunday",
+            albumLink: "https://photos.app.goo.gl/FLJ4pVRpCxyvtAio7",
+        },
+        {
+            id: 2,
             category: "friday",
             image: "photos and videos/Creative Friday.jpeg",
             alt: "Friday Creative Service",
@@ -25,7 +35,7 @@ const mediaData = {
             
         },
         {
-            id: 2,
+            id: 3,
             category: "sunday",
             image: "photos and videos/Occupational Sunday.jpeg",
             alt: "Sunday Service",
@@ -35,7 +45,7 @@ const mediaData = {
             albumLink: "https://photos.app.goo.gl/Ftzk8jRg3JXDLo5f7",
         },
         {
-            id: 3,
+            id: 4,
             category: "sunday",
             image: "photos and videos/Bible Study Launch.JPG",
             alt: "Bible Study Launch",
@@ -45,7 +55,7 @@ const mediaData = {
             albumLink: "https://photos.app.goo.gl/6fuoMir5JmnRTDzX9",
         },
         {
-            id: 4,
+            id: 5,
             category: "sunday",
             image: "photos and videos/Jesus Campaign.JPG",
             alt: "Jesus Campaign Inreach",
@@ -55,7 +65,7 @@ const mediaData = {
             albumLink: "https://photos.app.goo.gl/8byPBqYpmJFELAWj8",
         },
         {
-            id: 5,
+            id: 6,
             category: "outreach",
             image: "photos and videos/Children Home Visist.JPG",
             alt: "Children's Home Outreach Visit",
@@ -65,7 +75,7 @@ const mediaData = {
             albumLink: "https://photos.app.goo.gl/Lw3zRydQ5k6nZaTPA",
         },
         {
-            id: 6,
+            id: 7,
             category: "sunday",
             image: "photos and videos/Prayer and Fasting Sunday.JPG",
             alt: "Sunday Prayer and Fasting Service",
