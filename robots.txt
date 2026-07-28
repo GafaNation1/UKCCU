@@ -1,4 +1,6 @@
+# Allow all search engine crawlers
 User-agent: *
 Allow: /
 
+# Link directly to your XML Sitemap
 Sitemap: https://ukccu.org/sitemap.xml
